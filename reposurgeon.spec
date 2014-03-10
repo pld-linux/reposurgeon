@@ -4,13 +4,13 @@ Version:	3.6
 Release:	1
 License:	BSD
 Group:		Development/Tools
-URL:		http://www.catb.org/~esr/reposurgeon/
 Source0:	http://www.catb.org/~esr/reposurgeon/%{name}-%{version}.tar.gz
 # Source0-md5:	a582cdf942d756deb7b78b7676797640
+URL:		http://www.catb.org/~esr/reposurgeon/
 BuildRequires:	asciidoc
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	xmlto
-Requires:	python >= 2.7.2
+Requires:	python >= 1:2.7.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,10 +30,9 @@ conversions.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	prefix=%{_prefix}
+	prefix=%{_prefix} \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -41,9 +40,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING NEWS README TODO features.html repodiffer.html repopuller.html reposurgeon.html
-%attr(755,root,root) %{_bindir}/%{name}
+%attr(755,root,root) %{_bindir}/reposurgeon
 %attr(755,root,root) %{_bindir}/repopuller
 %attr(755,root,root) %{_bindir}/repodiffer
-%{_mandir}/man1/%{name}.1*
+%{_mandir}/man1/reposurgeon.1*
 %{_mandir}/man1/repodiffer.1*
 %{_mandir}/man1/repopuller.1*
