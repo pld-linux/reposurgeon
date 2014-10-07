@@ -9,6 +9,7 @@ Source0:	http://www.catb.org/~esr/reposurgeon/%{name}-%{version}.tar.gz
 URL:		http://www.catb.org/~esr/reposurgeon/
 BuildRequires:	asciidoc
 BuildRequires:	docbook-dtd412-xml
+BuildRequires:	python-devel
 BuildRequires:	xmlto
 Requires:	python >= 1:2.7.2
 BuildArch:	noarch
