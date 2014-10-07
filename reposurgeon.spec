@@ -1,11 +1,11 @@
 Summary:	VCS repository manipulation tool
 Name:		reposurgeon
-Version:	3.6
+Version:	3.12
 Release:	1
 License:	BSD
 Group:		Development/Tools
 Source0:	http://www.catb.org/~esr/reposurgeon/%{name}-%{version}.tar.gz
-# Source0-md5:	a582cdf942d756deb7b78b7676797640
+# Source0-md5:	4f6bbc17a733112baddaf224bb3d6b2c
 URL:		http://www.catb.org/~esr/reposurgeon/
 BuildRequires:	asciidoc
 BuildRequires:	docbook-dtd412-xml
@@ -33,6 +33,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	prefix=%{_prefix} \
 	DESTDIR=$RPM_BUILD_ROOT
+
+%{__rm} -r $RPM_BUILD_ROOT%{_docdir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
