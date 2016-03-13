@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.md AUTHORS COPYING NEWS TODO *.html
+%doc README.md AUTHORS COPYING NEWS TODO *.html reposurgeon-git-aliases reposurgeon-mode.el
 %attr(755,root,root) %{_bindir}/repocutter
 %attr(755,root,root) %{_bindir}/repodiffer
 %attr(755,root,root) %{_bindir}/repomapper
