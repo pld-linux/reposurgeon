@@ -1,0 +1,40 @@
+--- reposurgeon-3.36/repocutter	2016-02-28 12:56:42.000000000 +0200
++++ reposurgeon-3.36.bang/repocutter	2016-03-14 08:32:32.220361319 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ #
+ # Hacked together by ESR, October 2009. New BSD license applies.
+ # The Subversion project is explicitly granted permission to redistribute
+--- reposurgeon-3.36/repodiffer	2016-02-24 22:16:16.000000000 +0200
++++ reposurgeon-3.36.bang/repodiffer	2016-03-14 08:32:32.223694825 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ #
+ # Compare git repositories or fast-import streams for differences.
+ #
+--- reposurgeon-3.36/repomapper	2016-02-28 14:45:01.000000000 +0200
++++ reposurgeon-3.36.bang/repomapper	2016-03-14 08:32:32.223694825 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python3
++#!/usr/bin/python2
+ # SPDX-License-Identifier: BSD-2-Clause
+ """
+ repomapper - update and manipulate contributor maps
+--- reposurgeon-3.36/reposurgeon	2016-03-13 15:09:13.000000000 +0200
++++ reposurgeon-3.36.bang/reposurgeon	2016-03-14 08:32:32.240362353 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ #
+ # reposurgeon - a repository surgeon.
+ #
+--- reposurgeon-3.36/repotool	2016-01-22 20:25:24.000000000 +0200
++++ reposurgeon-3.36.bang/repotool	2016-03-14 08:32:58.058363173 +0200
+@@ -1,4 +1,4 @@
+-#!/bin/bash
++#!/bin/sh
+ #
+ # repotool - query and manipulate multiple repository types in a uniform way.
+ #

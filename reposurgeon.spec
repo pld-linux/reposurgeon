@@ -1,11 +1,12 @@
 Summary:	VCS repository manipulation tool
 Name:		reposurgeon
 Version:	3.36
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Tools
 Source0:	http://www.catb.org/~esr/reposurgeon/%{name}-%{version}.tar.xz
 # Source0-md5:	6580579ec266d8ec3b2ed1fcbfa024d4
+Patch0:		shebangs.patch
 URL:		http://www.catb.org/~esr/reposurgeon/
 BuildRequires:	asciidoc
 BuildRequires:	docbook-dtd412-xml
@@ -29,6 +30,7 @@ high-quality conversions from Subversion to any supported DVCS.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make}
