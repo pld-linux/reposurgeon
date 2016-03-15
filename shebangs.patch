@@ -30,11 +30,3 @@
  #
  # reposurgeon - a repository surgeon.
  #
---- reposurgeon-3.36/repotool	2016-01-22 20:25:24.000000000 +0200
-+++ reposurgeon-3.36.bang/repotool	2016-03-14 08:32:58.058363173 +0200
-@@ -1,4 +1,4 @@
--#!/bin/bash
-+#!/bin/sh
- #
- # repotool - query and manipulate multiple repository types in a uniform way.
- #
